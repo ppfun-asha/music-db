@@ -38,7 +38,7 @@ export function Filters({ data, filters, onFilterChange }) {
 
         // Genre フィルター
         React.createElement('div', null,
-          React.createElement('label', { className: 'block text-xs font-medium text-gray-500 mb-1' }, 'Genre'),
+          React.createElement('label', { className: 'block text-xs font-medium text-gray-500 mb-1' }, '動画/配信/shorts'),
           React.createElement('select', {
             className: 'w-full border border-gray-300 rounded px-2 py-1 text-sm',
             value: filters.genre,
@@ -53,7 +53,7 @@ export function Filters({ data, filters, onFilterChange }) {
 
         // Member フィルター
         React.createElement('div', null,
-          React.createElement('label', { className: 'block text-xs font-medium text-gray-500 mb-1' }, 'Member'),
+          React.createElement('label', { className: 'block text-xs font-medium text-gray-500 mb-1' }, 'メンバー'),
           React.createElement('select', {
             className: 'w-full border border-gray-300 rounded px-2 py-1 text-sm',
             value: filters.member,

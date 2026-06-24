@@ -76,7 +76,7 @@ function MobileView(props) {
           ),
 
           React.createElement('div', { className: 'mb-4' },
-            React.createElement('label', { className: 'block text-xs font-medium text-gray-500 mb-1' }, 'Genre'),
+            React.createElement('label', { className: 'block text-xs font-medium text-gray-500 mb-1' }, '動画/配信/shorts'),
             React.createElement('select', {
               className: 'w-full border border-gray-300 rounded px-2 py-2 text-sm',
               value: filters.genre,
@@ -90,7 +90,7 @@ function MobileView(props) {
           ),
 
           React.createElement('div', { className: 'mb-4' },
-            React.createElement('label', { className: 'block text-xs font-medium text-gray-500 mb-1' }, 'Member'),
+            React.createElement('label', { className: 'block text-xs font-medium text-gray-500 mb-1' }, 'メンバー'),
             React.createElement('select', {
               className: 'w-full border border-gray-300 rounded px-2 py-2 text-sm',
               value: filters.member,
@@ -172,7 +172,7 @@ function MobileView(props) {
       React.createElement('button', {
         onClick: function() { setDrawerOpen(true) },
         className: 'fixed bottom-6 right-6 bg-blue-600 text-white rounded-full px-5 py-3 shadow-lg text-sm font-medium z-30',
-      }, '🔍 フィルター')
+      }, 'フィルター')
     )
   )
 }
