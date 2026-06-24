@@ -10,10 +10,9 @@ import { useState } from 'react'
 
 const columns = [
   { accessorKey: 'no',          header: 'No',         size: 60  },
-  { accessorKey: 'genre',       header: 'Genre',       size: 80  },
+  { accessorKey: 'genre',       header: '動画/配信/shorts',       size: 80  },
   { accessorKey: 'date',        header: '日付',         size: 100 },
-  { accessorKey: 'member',      header: 'Member',      size: 100 },
-  { accessorKey: 'title',       header: 'Title',       size: 200 },
+  { accessorKey: 'member',      header: 'メンバー',      size: 100 },
   { accessorKey: 'music',       header: '楽曲名',       size: 150 },
   { accessorKey: 'artist',      header: 'アーティスト', size: 150 },
   {
@@ -25,10 +24,11 @@ const columns = [
       return info.getValue().join(', ')
     },
   },
+  { accessorKey: 'title',       header: 'タイトル',       size: 200 },
 ]
 
 export function DataTable({ data }) {
-  var sortingState = useState([])
+  var sortingState = useState([{ id: 'no', desc: true }])
   var sorting = sortingState[0]
   var setSorting = sortingState[1]
 
