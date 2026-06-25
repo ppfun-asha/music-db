@@ -3,9 +3,12 @@ import React from 'react'
 function MobileCard(props) {
   var row = props.row
 
-  function handleClick() {
-    if (row.playUrl) window.open(row.playUrl, '_blank', 'noopener,noreferrer')
+function handleClick() {
+  if (row.playUrl) {
+    var confirmed = window.confirm('YouTubeを開きますか？')
+    if (confirmed) window.open(row.playUrl, '_blank', 'noopener,noreferrer')
   }
+}
 
   return (
     React.createElement('div', {
