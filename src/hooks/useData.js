@@ -6,7 +6,7 @@ export function useData() {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    fetch('./data.json')
+    fetch('./data.json?v=' + new Date().toISOString().slice(0, 10))
       .then(res => {
         if (!res.ok) throw new Error('データの取得に失敗しました')
         return res.json()
